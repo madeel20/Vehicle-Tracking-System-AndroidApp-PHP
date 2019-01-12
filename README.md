@@ -1,0 +1,2 @@
+# Vehicle-Tracking-System-WebApp-PHP
+This is a complete Vehicle Tracking System. It tracks a device real time and show its location on Map on Web App. It maintains the history of every device and user can view them history by date and time. The user will first register from android app then wait for approval from admin . Now admin from web app submitted requests and can view all the details, admin can approve the request or can delete it. After approval from admin the user will automatically will be redirected to login page and the tracking will begin. 
