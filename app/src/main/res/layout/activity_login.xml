@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mfe.madeel.devicetracker.login"
+    android:background="#9a5418">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:src="@drawable/spl"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textColor="#000"
+        android:background="#fff"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Log Out"
+        android:id="@+id/logout"
+        android:onClick="logout"
+android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtpartyname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Username: "
+        android:id="@+id/username"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"
+        android:layout_below="@+id/imageView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Keep Your Internet and Location service on"
+        android:id="@+id/textView7"
+        android:textColor="#ffff"
+        android:layout_above="@+id/textView9"
+        android:layout_alignStart="@+id/imageView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Details:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/username"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="First Name: "
+        android:id="@+id/txtfname"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Last Name: "
+        android:id="@+id/txtlname"
+        android:layout_below="@+id/txtfname"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address: "
+        android:id="@+id/txtAddress"
+        android:layout_below="@+id/txtlname"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cell NO: "
+        android:id="@+id/txtCEllno"
+        android:layout_below="@+id/txtAddress"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vehicle NO: "
+        android:id="@+id/txtVehicleno"
+        android:layout_below="@+id/txtCEllno"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Broker NO: "
+        android:id="@+id/txtBrokername"
+        android:layout_below="@+id/txtVehicleno"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CNIC: "
+        android:id="@+id/txtcnic"
+        android:layout_below="@+id/txtBrokername"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Party Name: "
+        android:id="@+id/txtpartyname"
+        android:layout_below="@+id/txtcnic"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="www.mfenter.com"
+        android:id="@+id/textView9"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"/>
+
+
+</RelativeLayout>

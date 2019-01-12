@@ -1,0 +1,58 @@
+@charset "utf-8";
+label{
+	font-size:15px;
+}
+body {
+        font-family: 'Bitter', serif;
+        font-size: 48px;
+		padding:0;
+		margin:0;
+      }
+	  .error{
+		  color:red;
+		  font-size:20px; 
+		  animation:0.2s linear error;
+	  }
+#head {
+}
+@media screen and (max-width: 48em){
+    #head{
+        text-align: justify ;
+		margin-top:0;
+    }
+	#logodiv{
+		text-align:center;
+	}
+	.profile {
+		margin:0px;
+	}
+}
+
+.headerbt{
+	font-size:12px;
+	border-left: 1px solid ;
+	color:white;
+	padding:10px;
+	text-align:center;
+}
+.headerbt:hover {
+ background:#3C71EC;
+ border-left: 1px solid #FFFFFF;
+}
+.cover {
+	border:1px double black;
+	padding:100px;
+	height:400px;
+}
+.profile {
+	border:1px double black;
+	margin-left:-90px;
+	height:210px;
+	background:white;
+}
+.nv{
+	height:50px;
+}
+		
+
+	

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="#9a5418"
+    tools:context="com.mfe.madeel.devicetracker.register">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/spl"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create an Account"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_x="93dp"
+        android:layout_y="76dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="First Name"
+        android:id="@+id/txtfname"
+        android:textSize="13dp"
+        android:layout_x="55dp"
+        android:layout_y="460dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtlname"
+        android:layout_centerHorizontal="true"
+        android:nextFocusForward="@id/txtlname"
+        android:imeOptions="actionNext"/>
+
+    <Button
+        android:background="#fff"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Create"
+        android:id="@+id/regbtn"
+        android:onClick="regtbn"
+
+        android:layout_x="1dp"
+        android:layout_y="494dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/imageView"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Last Name"
+        android:id="@+id/txtlname"
+        android:layout_x="71dp"
+        android:layout_y="116dp"
+        android:textSize="13dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/imageView1"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:hint="Address..."
+        android:id="@+id/txtAddress"
+        android:layout_x="63dp"
+        android:layout_y="178dp"
+        android:layout_below="@+id/txtfname"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:maxLength="13"
+
+        android:hint="Cell No..."
+        android:id="@+id/txtCEllno"
+        android:layout_x="63dp"
+        android:layout_y="178dp"
+
+        android:layout_below="@+id/txtAddress"
+        android:layout_alignEnd="@+id/txtAddress"
+        android:layout_alignStart="@+id/txtAddress"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Vehicle No..."
+        android:id="@+id/txtVehicleno"
+        android:layout_x="63dp"
+        android:layout_y="178dp"
+        android:layout_below="@+id/txtCEllno"
+        android:layout_alignEnd="@+id/txtCEllno"
+        android:layout_alignStart="@+id/txtCEllno"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Broker No..."
+        android:id="@+id/txtBrokername"
+        android:layout_x="63dp"
+        android:layout_y="178dp"
+        android:layout_below="@+id/txtVehicleno"
+        android:layout_alignEnd="@+id/txtVehicleno"
+        android:layout_alignStart="@+id/txtVehicleno"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="CNIC..."
+        android:id="@+id/txtcnic"
+        android:maxLength="13"
+        android:layout_x="63dp"
+        android:layout_y="178dp"
+        android:layout_below="@+id/txtBrokername"
+        android:layout_alignEnd="@+id/txtBrokername"
+        android:layout_alignStart="@+id/txtBrokername"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Party Name..."
+        android:id="@+id/txtpartyname"
+        android:layout_x="63dp"
+        android:layout_y="178dp"
+        android:layout_below="@+id/txtcnic"
+        android:layout_alignEnd="@+id/txtcnic"
+        android:layout_alignStart="@+id/txtcnic"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Username..."
+        android:maxLength="10"
+        android:id="@+id/txtuserame"
+          android:nextFocusForward="@+id/txtpass"
+        android:layout_below="@+id/txtpartyname"
+        android:layout_alignStart="@+id/txtpartyname"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password..."
+        android:maxLength="10"
+
+        android:id="@+id/txtpass"
+        android:layout_alignTop="@+id/txtrpass"
+        android:layout_alignStart="@+id/regbtn"
+        android:nextFocusForward="@id/txtrpass"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:maxLength="10"
+        android:hint="Re-enter password"
+        android:id="@+id/txtrpass"
+
+        android:layout_below="@+id/txtuserame"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="www.mfenter.com"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

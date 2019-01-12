@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MFE Vehicle Tracker</string>
+    <string name="url">mfenter.com/tracker</string>
+</resources>
